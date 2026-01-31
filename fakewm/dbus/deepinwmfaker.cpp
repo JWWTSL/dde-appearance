@@ -992,6 +992,16 @@ void DeepinWMFaker::MinimizeActiveWindow()
     KX11Extras::minimizeWindow(KX11Extras::activeWindow());
 }
 
+void DeepinWMFaker::MaximizeActiveWindow()
+{
+    Q_EMIT MaximizeActiveWindowChanged();
+}
+
+void DeepinWMFaker::UnMaximizeActiveWindow()
+{
+    Q_EMIT UnMaximizeActiveWindowChanged();
+}
+
 void DeepinWMFaker::SetDecorationTheme(const QString &type, const QString &name)
 {
     m_kwinConfig->group("org.kde.kdecoration2").writeEntry("theme", QVariant());

@@ -21,6 +21,10 @@
     </method>
     <method name="MinimizeActiveWindow">
     </method>
+    <method name="MaximizeActiveWindow">
+    </method>
+    <method name="UnMaximizeActiveWindow">
+    </method>
     <method name="ShowWorkspace">
     </method>
     <method name="ShowWindow">
@@ -150,6 +154,10 @@
         <arg type="i" name="side"/>
     </signal>
     <signal name="ToggleActiveWindowMaximizeChanged">
+    </signal>
+    <signal name="MaximizeActiveWindowChanged">
+    </signal>
+    <signal name="UnMaximizeActiveWindowChanged">
     </signal>
     <signal name="ShowAllWindowChanged">
     </signal>

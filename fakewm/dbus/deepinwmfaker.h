@@ -124,6 +124,8 @@ public Q_SLOTS:
     void TileActiveWindow(uint side);
     void ToggleActiveWindowMaximize();
     void MinimizeActiveWindow();
+    void MaximizeActiveWindow();
+    void UnMaximizeActiveWindow();
 
     void SetDecorationTheme(const QString &type, const QString &name);
     void SetDecorationDeepinTheme(const QString &name);
@@ -170,6 +172,8 @@ Q_SIGNALS:
     void SwitchApplicationChanged(bool backward); 
     void TileActiveWindowChanged(int side);
     void ToggleActiveWindowMaximizeChanged();
+    void MaximizeActiveWindowChanged();
+    void UnMaximizeActiveWindowChanged();
     void ShowAllWindowChanged();
     void ShowWindowChanged();
     void ShowWorkspaceChanged();
